@@ -1,0 +1,23 @@
+# visual studio stuff
+*.scc
+*.sdf
+*.suo
+*.cache
+*.pdb
+*.pch
+*.ipch
+*.obj
+*.exp
+*.vshost.exe
+*.vshost.manifest
+.vs/
+
+# Ausgabe der Debug-Version
+bin/Debug/
+# Testdaten
+bin/Release/*.csv
+bin/Release/*.xlsx
+bin/Release/*.d83
+# temporaere Unterverzeichnisse
+saCsv2Gaeb90/bin/
+saCsv2Gaeb90/obj/
