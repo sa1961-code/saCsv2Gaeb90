@@ -9,7 +9,7 @@
 *.obj
 *.exp
 *.vshost.exe
-*.vshost.manifest
+*.vshost.exe.manifest
 .vs/
 
 # Ausgabe der Debug-Version
