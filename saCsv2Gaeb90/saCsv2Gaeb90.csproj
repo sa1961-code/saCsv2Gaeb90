@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Csv2Gaeb90_Definition.cs" />
     <Compile Include="Csv2Gaeb90_Konverter.cs" />
     <Compile Include="Csv2Gaeb90_MainForm.cs">
       <SubType>Form</SubType>
@@ -55,7 +56,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqlCsvResult.cs" />
+    <Compile Include="CsvHandler.cs" />
     <Compile Include="Tools.cs" />
     <EmbeddedResource Include="Csv2Gaeb90_MainForm.resx">
       <DependentUpon>Csv2Gaeb90_MainForm.cs</DependentUpon>

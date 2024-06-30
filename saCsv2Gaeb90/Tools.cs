@@ -6,6 +6,9 @@ using System.Windows.Forms;
 
 namespace saCsv2Gaeb90
 {
+    /// <summary>
+    /// statische Funtionen, die in keinem besondern Kontext stehen
+    /// </summary>
     internal class Tools
     {
         public static double StringToDouble(string bsParam)

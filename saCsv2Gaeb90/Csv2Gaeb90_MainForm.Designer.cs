@@ -51,11 +51,12 @@
             // 
             this.textBoxDefintionName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxDefintionName.Location = new System.Drawing.Point(69, 8);
+            this.textBoxDefintionName.Location = new System.Drawing.Point(69, 7);
             this.textBoxDefintionName.Name = "textBoxDefintionName";
             this.textBoxDefintionName.ReadOnly = true;
-            this.textBoxDefintionName.Size = new System.Drawing.Size(300, 20);
+            this.textBoxDefintionName.Size = new System.Drawing.Size(251, 20);
             this.textBoxDefintionName.TabIndex = 1;
+            this.textBoxDefintionName.TextChanged += new System.EventHandler(this.textBoxDefintionName_TextChanged);
             // 
             // label2
             // 
@@ -91,16 +92,18 @@
             this.textBoxContent.Size = new System.Drawing.Size(571, 277);
             this.textBoxContent.TabIndex = 4;
             this.textBoxContent.WordWrap = false;
+            this.textBoxContent.TextChanged += new System.EventHandler(this.textBoxContent_TextChanged);
             // 
             // buttonOpenDefinition
             // 
             this.buttonOpenDefinition.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonOpenDefinition.Location = new System.Drawing.Point(375, 8);
+            this.buttonOpenDefinition.Location = new System.Drawing.Point(326, 8);
             this.buttonOpenDefinition.Name = "buttonOpenDefinition";
-            this.buttonOpenDefinition.Size = new System.Drawing.Size(26, 20);
+            this.buttonOpenDefinition.Size = new System.Drawing.Size(71, 20);
             this.buttonOpenDefinition.TabIndex = 5;
-            this.buttonOpenDefinition.Text = "?";
+            this.buttonOpenDefinition.Text = "auwählen";
             this.buttonOpenDefinition.UseVisualStyleBackColor = true;
+            this.buttonOpenDefinition.Click += new System.EventHandler(this.buttonOpenDefinition_Click);
             // 
             // buttonOpen
             // 
@@ -109,7 +112,7 @@
             this.buttonOpen.Name = "buttonOpen";
             this.buttonOpen.Size = new System.Drawing.Size(75, 23);
             this.buttonOpen.TabIndex = 6;
-            this.buttonOpen.Text = "Öffnen";
+            this.buttonOpen.Text = "csv öffnen";
             this.buttonOpen.UseVisualStyleBackColor = true;
             this.buttonOpen.Click += new System.EventHandler(this.buttonOpen_Click);
             // 
@@ -120,7 +123,7 @@
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(75, 23);
             this.buttonSave.TabIndex = 7;
-            this.buttonSave.Text = "Speichern";
+            this.buttonSave.Text = "speichern";
             this.buttonSave.UseVisualStyleBackColor = true;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 

@@ -1,0 +1,231 @@
+00        83                                                  1122PPPPI90X000001
+01aus csv-Daten konvertiert               30.06.24                        000002
+02aus csv-Daten konvertiert                                               000003
+03n.a.                                                                    000004
+04n.a.                                                                    000005
+08EUR   Euro                                                              000006
+10 1GebÑude Grundausbau                                                   000007
+11 1       N                                                              000008
+12KG410 Abwasser-, Wasseranlagen                                          000009
+11 1 1     N                                                              000010
+12KG411 Abwasseranlagen                                                   000011
+21 1 1  10 NNN         00000010000m                                       000012
+25PE-Rohr  Wavin DN70 einschl. FormstÅcke                                 000013
+26   PE-Rohr  Wavin DN70 einschl. FormstÅcke                              000014
+21 1 1  20 NNN         00000118000m                                       000015
+25PP-ASPlus-Rohr  DN100 einschl. FormstÅcke                               000016
+26   PP-ASPlus-Rohr  DN100 einschl. FormstÅcke                            000017
+21 1 1  30 NNN         00000110000m                                       000018
+25PP-ASPlus-Rohr  DN125 einschl. FormstÅcke                               000019
+26   PP-ASPlus-Rohr  DN125 einschl. FormstÅcke                            000020
+21 1 1  40 NNN         00000050000m                                       000021
+25PP-ASPlus-Rohr DN150 einschl. FormstÅcke                                000022
+26   PP-ASPlus-Rohr DN150 einschl. FormstÅcke                             000023
+21 1 1  50 NNN         00000041000m                                       000024
+25PE-Rohr Wavin DN100 einschl. FormstÅcke                                 000025
+26   PE-Rohr Wavin DN100 einschl. FormstÅcke                              000026
+21 1 1  60 NNN         00000154000m                                       000027
+25Grundleitung KG-Rohr DN100 einschl. FormstÅcke                          000028
+26   Grundleitung KG-Rohr DN100 einschl. FormstÅcke                       000029
+21 1 1  70 NNN         00000001000m                                       000030
+25Grundleitung KG-Rohr DN125 einschl. FormstÅcke                          000031
+26   Grundleitung KG-Rohr DN125 einschl. FormstÅcke                       000032
+21 1 1  80 NNN         00000004500m                                       000033
+25Grundleitung KG-Rohr DN150 einschl. FormstÅcke                          000034
+26   Grundleitung KG-Rohr DN150 einschl. FormstÅcke                       000035
+21 1 1  90 NNN         00000027000m                                       000036
+25SML-Rohr DN125 einschl. FormstÅcke                                      000037
+26   SML-Rohr DN125 einschl. FormstÅcke                                   000038
+21 1 1 100 NNN         00000054000m                                       000039
+25Isolierung Schmutzwasser DN100-150                                      000040
+26   Isolierung Schmutzwasser DN100-150                                   000041
+21 1 1 110 NNN         00000008000Stk                                     000042
+25Brandschutz SW                                                          000043
+26   Brandschutz SW                                                       000044
+21 1 1 120 NNN         00000001000psch                                    000045
+25Brandschutz SW-Leitung                                                  000046
+26   Brandschutz SW-Leitung                                               000047
+21 1 1 130 NNN         00000006000Stk                                     000048
+25Bodenablauf DN100                                                       000049
+26   Bodenablauf DN100                                                    000050
+21 1 1 140 NNN         00000000000Stk                                     000051
+25SW Anschluss an Infrastruktur                                           000052
+26   SW Anschluss an Infrastruktur                                        000053
+21 1 1 150 NNN         00000002000Stk                                     000054
+25Anfertigen der Revisionsunterlagen                                      000055
+26   Anfertigen der Revisionsunterlagen                                   000056
+21 1 1 160 NNN         00000002000Stk                                     000057
+25SW Duo Hebeanlage KSB, Compacta UZ3.150 D                               000058
+26   SW Duo Hebeanlage KSB, Compacta UZ3.150 D                            000059
+21 1 1 170 NNN         00000004000Stk                                     000060
+25Duschrinne mit Grundkîrper                                              000061
+26   Duschrinne mit Grundkîrper                                           000062
+21 1 1 180 NNN         00000008000Stk                                     000063
+25Bodenablauf Lichtschacht                                                000064
+26   Bodenablauf Lichtschacht                                             000065
+21 1 1 190 NNN         00000014000Stk                                     000066
+25Bodenablauf Technik                                                     000067
+26   Bodenablauf Technik                                                  000068
+31 1 1                                                                    000069
+31 1                                                                      000070
+11 2       N                                                              000071
+12KG420 WÑrmeversorgungsanlagen                                           000072
+11 2 1     N                                                              000073
+12KG421 WÑrmeerzeugungsanlagen                                            000074
+21 2 1  10 NNN         00000001000St                                      000075
+25FernwÑrme-Kompaktstation DSE1 LARGE                                     000076
+26   FernwÑrme-Kompaktstation DSE1 LARGE                                  000077
+26   IT100-100-000-MD-DE, 569 kW                                          000078
+21 2 1  20 NNN         00000001000St                                      000079
+25Heizungspumpe 001 Stratos MAXO-D 50/0,5-12 PN6/10                       000080
+26   Heizungspumpe 001 Stratos MAXO-D 50/0,5-12 PN6/10                    000081
+31 2 1                                                                    000082
+11 2 2     N                                                              000083
+12KG422 WÑrmeverteilnetze                                                 000084
+21 2 2  10 NNN         00000001000St                                      000085
+25Heizungsverteiler inkl. DÑmmung                                         000086
+26   Heizungsverteiler inkl. DÑmmung                                      000087
+21 2 2  20 NNN         00000001000St                                      000088
+25Membran-DruckausdehnungsgefÑ· Reflex N50                                000089
+26   Membran-DruckausdehnungsgefÑ· Reflex N50                             000090
+21 2 2  30 NNN         00000001000St                                      000091
+25Druckhaltung MAG001 Variomat VG200                                      000092
+26   Druckhaltung MAG001 Variomat VG200                                   000093
+21 2 2  40 NNN         00000001000St                                      000094
+25Druckhaltung STE001Variomat Steuereinheit VS 2-1/60 SC                  000095
+26   Druckhaltung STE001Variomat Steuereinheit VS 2-1/60 SC               000096
+26   (MAG+Entgasung+Nachspeiseeinrichtung)                                000097
+21 2 2  50 NNN         00000006000St                                      000098
+25Hydraulik-Gruppe RLT                                                    000099
+26   Hydraulik-Gruppe RLT                                                 000100
+21 2 2  60 NNN         00000001000St                                      000101
+25Heizungspumpe 002 Stratos MAXO- D 65/0,5-16 PN6/10                      000102
+26   Heizungspumpe 002 Stratos MAXO- D 65/0,5-16 PN6/10                   000103
+21 2 2  70 NNN         00000001000St                                      000104
+25Heizungspumpe 003 Stratos GIGA2.0-D 50/1-13/0,75                        000105
+26   Heizungspumpe 003 Stratos GIGA2.0-D 50/1-13/0,75                     000106
+21 2 2  80 NNN         00000001000St                                      000107
+25Heizungspumpe 004 Stratos MAXO-D 50/0,5-8 PN6/10                        000108
+26   Heizungspumpe 004 Stratos MAXO-D 50/0,5-8 PN6/10                     000109
+21 2 2  90 NNN         00000001000St                                      000110
+25Heizungspumpe 005 Stratos MAXO-D 50/0,5-6 PN6/10                        000111
+26   Heizungspumpe 005 Stratos MAXO-D 50/0,5-6 PN6/10                     000112
+21 2 2 100 NNN         00000006000St                                      000113
+25Heizungspumpe 006 Yonos MAXO plus 30/0,5-10                             000114
+26   Heizungspumpe 006 Yonos MAXO plus 30/0,5-10                          000115
+21 2 2 110 NNN         00000002000St                                      000116
+25WÑrmemengenzÑhler DN15 (UG)                                             000117
+26   WÑrmemengenzÑhler DN15 (UG)                                          000118
+21 2 2 120 NNN         00000000000St                                      000119
+25WÑrmemengenzÑhler (Mieteinheitsanschluss, werden                        000120
+26   WÑrmemengenzÑhler (Mieteinheitsanschluss, werden                     000121
+26   gemietet)                                                            000122
+20                                                                        000123
+26   Armaturen                                                            000124
+21 2 2 130 NNN         00000014000St                                      000125
+25Absperrklappen Flanschanschluss DN100 inkl. DÑmmung                     000126
+26   Absperrklappen Flanschanschluss DN100 inkl. DÑmmung                  000127
+21 2 2 140 NNN         00000018000St                                      000128
+25Absperrklappen Flanschanschluss DN65-DN80 inkl. DÑmmung                 000129
+26   Absperrklappen Flanschanschluss DN65-DN80 inkl. DÑmmung              000130
+21 2 2 150 NNN         00000026000St                                      000131
+25Absperrventile DN50-DN32 inkl. DÑmmung                                  000132
+26   Absperrventile DN50-DN32 inkl. DÑmmung                               000133
+21 2 2 160 NNN         00000048000St                                      000134
+25Absperrventile  DN15 (Entleerung, EntlÅfting)                           000135
+26   Absperrventile  DN15 (Entleerung, EntlÅfting)                        000136
+21 2 2 170 NNN         00000094000St                                      000137
+25Absperrventile  DN25-DN32 (ME Anschluss) mit DÑmmung                    000138
+26   Absperrventile  DN25-DN32 (ME Anschluss) mit DÑmmung                 000139
+21 2 2 180 NNN         00000006000St                                      000140
+25SchmutzfÑnger DN100-DN65 inkl. DÑmmung                                  000141
+26   SchmutzfÑnger DN100-DN65 inkl. DÑmmung                               000142
+21 2 2 190 NNN         00000002000St                                      000143
+25RÅckschlagventil Zwischenflanscharmatur DN100                           000144
+26   RÅckschlagventil Zwischenflanscharmatur DN100                        000145
+21 2 2 200 NNN         00000006000St                                      000146
+25RÅckschlagventil Zwischenflanscharmatur DN50-DN80                       000147
+26   RÅckschlagventil Zwischenflanscharmatur DN50-DN80                    000148
+21 2 2 210 NNN         00000003000St                                      000149
+25Sicherheitsventile                                                      000150
+26   Sicherheitsventile                                                   000151
+21 2 2 220 NNN         00000032000St                                      000152
+25Thermometer inkl.  (TZ)                                                 000153
+26   Thermometer inkl.  (TZ)                                              000154
+21 2 2 230 NNN         00000044000St                                      000155
+25Manometer inkl. Anschlussbogen (TZ)                                     000156
+26   Manometer inkl. Anschlussbogen (TZ)                                  000157
+21 2 2 240 NNN         00000052000St                                      000158
+25Differenzdruckregelventil (ME Anschluss)                                000159
+26   Differenzdruckregelventil (ME Anschluss)                             000160
+21 2 2 250 NNN         00000052000St                                      000161
+25Thermometer inkl. Anschwei·muffe (ME Anschluss)                         000162
+26   Thermometer inkl. Anschwei·muffe (ME Anschluss)                      000163
+21 2 2 260 NNN         00000104000St                                      000164
+25Manometer inkl. Anschlussbogen (ME Anschluss)                           000165
+26   Manometer inkl. Anschlussbogen (ME Anschluss)                        000166
+21 2 2 270 NNN         00000092000St                                      000167
+25Flanschanschluss DN100-DN65                                             000168
+26   Flanschanschluss DN100-DN65                                          000169
+20                                                                        000170
+26   Rohrleitungen grundiert                                              000171
+21 2 2 280 NNN         00001087000m                                       000172
+25Stahlrohr Prestabo DN15 inkl. FormstÅcke, DÑmmung,                      000173
+26   Stahlrohr Prestabo DN15 inkl. FormstÅcke, DÑmmung,                   000174
+26   Befestigung                                                          000175
+21 2 2 290 NNN         00000261000m                                       000176
+25Stahlrohr Prestabo DN20 inkl. FormstÅcke, DÑmmung,                      000177
+26   Stahlrohr Prestabo DN20 inkl. FormstÅcke, DÑmmung,                   000178
+26   Befestigung                                                          000179
+21 2 2 300 NNN         00000031000m                                       000180
+25Stahlrohr Prestabo DN25 inkl. FormstÅcke, DÑmmung,                      000181
+26   Stahlrohr Prestabo DN25 inkl. FormstÅcke, DÑmmung,                   000182
+26   Befestigung                                                          000183
+21 2 2 310 NNN         00000128000m                                       000184
+25Stahlrohr Prestabo DN32 inkl. FormstÅcke, DÑmmung,                      000185
+26   Stahlrohr Prestabo DN32 inkl. FormstÅcke, DÑmmung,                   000186
+26   Befestigung                                                          000187
+21 2 2 320 NNN         00000601000m                                       000188
+25Stahlrohr Prestabo DN40 inkl. FormstÅcke, DÑmmung,                      000189
+26   Stahlrohr Prestabo DN40 inkl. FormstÅcke, DÑmmung,                   000190
+26   Befestigung                                                          000191
+21 2 2 330 NNN         00000394000m                                       000192
+25Stahlrohr Prestabo DN50 inkl. FormstÅcke, DÑmmung,                      000193
+26   Stahlrohr Prestabo DN50 inkl. FormstÅcke, DÑmmung,                   000194
+26   Befestigung                                                          000195
+21 2 2 340 NNN         00000407000m                                       000196
+25Stahlrohr Prestabo DN65 inkl. FormstÅcke, DÑmmung,                      000197
+26   Stahlrohr Prestabo DN65 inkl. FormstÅcke, DÑmmung,                   000198
+26   Befestigung                                                          000199
+21 2 2 350 NNN         00000176000m                                       000200
+25Stahlrohr Prestabo DN80 inkl. FormstÅcke, DÑmmung,                      000201
+26   Stahlrohr Prestabo DN80 inkl. FormstÅcke, DÑmmung,                   000202
+26   Befestigung                                                          000203
+21 2 2 360 NNN         00000090000m                                       000204
+25Stahlrohr Prestabo DN100 inkl. FormstÅcke, DÑmmung,                     000205
+26   Stahlrohr Prestabo DN100 inkl. FormstÅcke, DÑmmung,                  000206
+26   Befestigung                                                          000207
+21 2 2 370 NNN         00000012000St                                      000208
+25Lufttîpfe                                                               000209
+26   Lufttîpfe                                                            000210
+21 2 2 380 NNN         00000336000m                                       000211
+25Begleitheizung Dach (AnschlÅsse an RLT Anlagen)                         000212
+26   Begleitheizung Dach (AnschlÅsse an RLT Anlagen)                      000213
+31 2 2                                                                    000214
+31 2                                                                      000215
+11 9       N                                                              000216
+12KG490 Baustelleneinrichtung                                             000217
+11 9 1     N                                                              000218
+12KG491 Baustelleneinrichtung                                             000219
+21 9 1  10 NNN         00000000000psch                                    000220
+25Baustromverteiler mit Verkabelung  (in BE enthalten)                    000221
+26   Baustromverteiler mit Verkabelung  (in BE enthalten)                 000222
+21 9 1  20 NNN         00000000000psch                                    000223
+25Baustellen Grundbeleuchtung (in BE enthalten)                           000224
+26   Baustellen Grundbeleuchtung (in BE enthalten)                        000225
+21 9 1  30 NNN         00000000000psch                                    000226
+25Winterbaubeheizung (in BE enthalten)                                    000227
+26   Winterbaubeheizung (in BE enthalten)                                 000228
+31 9 1                                                                    000229
+31 9                                                                      000230
+33 1                                                                      000231
