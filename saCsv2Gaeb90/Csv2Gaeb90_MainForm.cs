@@ -161,7 +161,7 @@ namespace saCsv2Gaeb90
             bsName = Tools.AskSaveFileName(bsName, bsExtension);
             if (!String.IsNullOrEmpty(bsName))
             {
-                System.IO.File.WriteAllText(bsName, bsContent, Encoding.GetEncoding(858));
+                System.IO.File.WriteAllText(bsName, bsContent, Encoding.Default);
             }
         }
 
