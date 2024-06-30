@@ -35,3 +35,6 @@ In der Ansicht GAEB-Daten sehen Sie eine Vorschau der erzeugten GAEB-Ausgabe. Di
 Die Beispieldatei Sample-2024-06-30_Description.ini enthält ausführliche Kommentare, die es Ihnen erleichtern
 die Definitionsdaten an Ihre csv-Quelle anzupassen. Im Beispiel enthält die Quelle keine getrennten Kurz- oder
 Langtexte, daher verweisen hier alle Textfelder auf die Spalte "Kurztext alt".
+  
+
+s.a. 2024-06-30
