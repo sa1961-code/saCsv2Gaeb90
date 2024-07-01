@@ -9,10 +9,12 @@ This offer is not intended for use outside of Germany.
 ## About
 ### (DE) Konverter von csv-Dateiformat nach GAEB90
 SaXps2Pdf-Converter ist ein einfaches Werkzeug zur Konvertierung von 
-Leistungsverzeichnissen im csv-Format in eine GAEB90-Datei.
+Leistungsverzeichnissen im csv-Format in eine GAEB90-Datei.  
+Verwenden Sie zum Kompilieren Visual Studio 2017 oder höher.
 ### (EN) Converts csv-files into GAEB90-format
 SaXps2Pdf-Converter is a simple tool for converting 
 service lists in csv format into a GAEB90 file.  
+Use Visual Studio 2017 or later to compile.  
 
 Note:  
 GAEB is an exchange format for specifications commonly used in the German construction industry. 
