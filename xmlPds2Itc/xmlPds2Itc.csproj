@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C1E2F474-2F6F-48C6-B5CD-2182C9AFD6FB}</ProjectGuid>
+    <ProjectGuid>{203B6F01-A072-4108-8A5D-8AC31685E272}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>saCsv2Gaeb90</RootNamespace>
-    <AssemblyName>saCsv2Gaeb90</AssemblyName>
+    <RootNamespace>xmlPds2Itc</RootNamespace>
+    <AssemblyName>xmlPds2Itc</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -49,20 +49,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Csv2Gaeb90_Definition.cs" />
-    <Compile Include="Csv2Gaeb90_Konverter.cs" />
-    <Compile Include="Csv2Gaeb90_MainForm.cs">
+    <Compile Include="XmlPdsMainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Csv2Gaeb90_MainForm.Designer.cs">
-      <DependentUpon>Csv2Gaeb90_MainForm.cs</DependentUpon>
+    <Compile Include="XmlPdsMainForm.Designer.cs">
+      <DependentUpon>XmlPdsMainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PdsKonverter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="CsvHandler.cs" />
-    <Compile Include="Tools.cs" />
-    <EmbeddedResource Include="Csv2Gaeb90_MainForm.resx">
-      <DependentUpon>Csv2Gaeb90_MainForm.cs</DependentUpon>
+    <Compile Include="XmlElementHelper.cs" />
+    <EmbeddedResource Include="XmlPdsMainForm.resx">
+      <DependentUpon>XmlPdsMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
