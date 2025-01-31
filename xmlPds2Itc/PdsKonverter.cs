@@ -68,7 +68,12 @@ namespace xmlPds2Itc
                         case "Gutschrift":
                             if (!result) result = convertBeleg(itcRoot, (XmlElement)e, " 2", "Gutschrift");
                             break;
-                        default:
+						
+						case "Auftrag":
+						if (!result) result = convertBeleg(itcRoot, (XmlElement)e, " 7", "Auftrag");
+							break;
+						
+						default:
                             HandleUnknownTag(e.LocalName, "convertRoot");
                             break;
                     }
