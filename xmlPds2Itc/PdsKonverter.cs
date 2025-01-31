@@ -68,7 +68,7 @@ namespace xmlPds2Itc
                         case "Gutschrift":
                             if (!result) result = convertBeleg(itcRoot, (XmlElement)e, " 2", "Gutschrift");
                             break;
-						
+						// gs 2025-01-30 Auftragsverzweigung hinzugefuegt
 						case "Auftrag":
 						if (!result) result = convertBeleg(itcRoot, (XmlElement)e, " 7", "Auftrag");
 							break;
