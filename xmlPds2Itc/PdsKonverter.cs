@@ -12,6 +12,10 @@ namespace xmlPds2Itc
         int m_LastRefKey;
         public StringBuilder Messages { get; private set; }
 
+        double m_MittelLohn;
+        double m_AufLohn;
+        double m_AufMat;
+
         public XmlDocument ConvertPds(XmlDocument pdsDoc)
         {
             Messages = new StringBuilder();
@@ -29,12 +33,17 @@ namespace xmlPds2Itc
             }
 
             XmlElement pdsRoot = pdsDoc.DocumentElement;
-            XmlElement itcRoot = itcDoc.DocumentElement;
             if (pdsRoot.LocalName != "Export")
             {
                 Messages.AppendLine("Unknown XmlRoot: " + pdsRoot.LocalName);
                 return null;
             }
+
+            XmlElement itcRoot = itcDoc.DocumentElement;
+            XmlElementHelper itcVorlauf = new XmlElementHelper(new XmlElementHelper(itcRoot).GetElement("Vorlauf"));
+            m_MittelLohn = StringToDouble(itcVorlauf.GetElementText("MITTLOHN"));
+            m_AufLohn = StringToDouble(itcVorlauf.GetElementText("AUFLOHN"));
+            m_AufMat = StringToDouble(itcVorlauf.GetElementText("AUFMAT"));
 
             m_LastRefKey = 100;
             if (convertRoot(itcRoot, pdsRoot))
@@ -372,6 +381,10 @@ namespace xmlPds2Itc
                     break;
             }
 
+            double EkLohn = 0.00;
+            double EkMat = 0.00;
+            double Minuten = 0.00;
+
             XmlElementHelper itcPosition = itcParent.AddElement("Position");
             itcPosition.Element.SetAttribute("RefKey", (++m_LastRefKey).ToString().PadLeft(6, '0'));
             itcPosition.SetElement("BEDARF", "0");
@@ -383,7 +396,7 @@ namespace xmlPds2Itc
             itcPosition.SetElement("POSNR", ParentPosNr);
             itcPosition.SetElement("KTXT1", "");
             itcPosition.SetElement("MENGE", "1");
-            itcPosition.SetElement("MITTELLOHN", "1");
+            // itcPosition.SetElement("MITTELLOHN", "1");
             itcPosition.SetElement("AUFWAND", "1");
             itcPosition.SetElement("ME", "");
             itcPosition.SetElement("PE", "1");
@@ -416,10 +429,20 @@ namespace xmlPds2Itc
                         case "Langtext":
                             itcPosition.SetElement("TextAng", e.InnerText);
                             break;
-                        case "VkAngebotspreis":
-                            itcPosition.SetElement("VK2MAT", ((XmlElement)e).GetAttribute("EinzelPreis"));
+                        case "Lohnzeit":
+                            Minuten = StringToDouble(e.InnerText) / 60;
+                            itcPosition.SetElement("ZEIT", DoubleToCoreString(Minuten));
+                            break;
+                        case "LohnzeitEinfach":
+                        case "SchwierigkeitsFaktor":
                             break;
                         case "EkNettopreis":
+                            EkMat = StringToDouble(new XmlElementHelper(e).GetElementText("Material"));
+                            EkLohn = StringToDouble(new XmlElementHelper(e).GetElementText("Lohn"));
+                            break;
+                        case "VkAngebotspreis":
+                            convertVkAngebotspreis(itcPosition, (XmlElement)e, EkMat, EkLohn, Minuten);
+                            break;
                         case "Deckungsbeitraege":
                         case "Preiseinheit":
                         case "Dimensionsfaktor":
@@ -433,9 +456,6 @@ namespace xmlPds2Itc
                         case "GaebImportMenge":
                         case "WahrscheinlicheMenge":
                         case "Arbeitsgruppe":
-                        case "Lohnzeit":
-                        case "LohnzeitEinfach":
-                        case "SchwierigkeitsFaktor":
                         case "ZuschlagID":
                         case "ID":
                         case "Favorit":
@@ -453,6 +473,27 @@ namespace xmlPds2Itc
                             break;
                     }
             }
+        }
+
+        void convertVkAngebotspreis(XmlElementHelper itcPosition, XmlElement pdsPreis, double EkMat, double EkLohn, double Minuten)
+        {
+            double ep = StringToDouble(pdsPreis.GetAttribute("EinzelPreis"));
+
+            double epLohn = StringToDouble((new XmlElementHelper(pdsPreis)).GetElementText("Lohn"));
+            double MLohn = (Minuten != 0) && (EkLohn != 0) ? EkLohn / Minuten : m_MittelLohn;
+            double AufLohn = (EkLohn != 0) && (epLohn != 0) ? ((epLohn / EkLohn) * 100.0) - 100.0  : m_AufLohn;
+
+            double epMat = ep - epLohn;
+            double AufMat = (EkMat != 0) && (epMat != 0) ? ((epMat / EkMat) * 100.0) - 100.0 : m_AufMat;
+
+            itcPosition.SetElement("MITTELLOHN", DoubleToCoreString(MLohn));
+            itcPosition.SetElement("BRUTTO", DoubleToCoreString(EkMat));
+            itcPosition.SetElement("EKMAT", DoubleToCoreString(EkMat));
+            itcPosition.SetElement("EKLOHN", DoubleToCoreString(EkLohn));
+            itcPosition.SetElement("AUFMAT", DoubleToCoreString(AufMat));
+            itcPosition.SetElement("AUFLOHN", DoubleToCoreString(AufLohn));
+            itcPosition.SetElement("VK2LOHN", DoubleToCoreString(epLohn));
+            itcPosition.SetElement("VK2MAT", DoubleToCoreString(epMat));
         }
 
         void convertPosition_Paket(XmlElementHelper itcParent, int NaechsteTiefe, string ParentPosNr, XmlElement pdsPosition)

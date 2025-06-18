@@ -12,6 +12,15 @@ Use Visual Studio 2017 or later to compile.
 Note:  
 I will write the further content of this file only in German.
 
+## &Auml;nderungen
+
+### 2024-06-30
+Erste Version 01.24.06.30
+
+### 2025-06-18
+Version 01.25.06.18  
+Einkaufspreise und Lohn- und Marterialtrennung bei Positionen
+
 ## Anwendung
 ### Bedienung
 

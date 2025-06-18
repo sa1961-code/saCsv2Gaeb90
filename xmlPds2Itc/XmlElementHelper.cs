@@ -37,6 +37,12 @@ namespace xmlPds2Itc
             return (elemList != null) && (elemList.Count > 0) ? elemList[0].InnerText : "";
         }
 
+        public XmlElement GetElement(string bsName)
+        {
+            var elemList = e.GetElementsByTagName(bsName);
+            return (elemList != null) && (elemList.Count > 0) ? (XmlElement)(elemList[0]) : null;
+        }
+
         public void SetAttribute(string bsName, string bsValue)
         {
             e.SetAttribute(bsName, bsValue);

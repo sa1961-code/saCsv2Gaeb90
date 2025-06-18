@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("advantage-it-crafts")]
-[assembly: AssemblyCopyright("2024, Steffen Anders / MIT license")]
+[assembly: AssemblyCopyright("2024..2025 Steffen Anders / MIT license")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // Sie können alle Werte angeben oder die standardmäßigen Build- und Revisionsnummern 
 // übernehmen, indem Sie "*" eingeben:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("01.24.06.30")]
-[assembly: AssemblyFileVersion("01.24.06.30")]
+[assembly: AssemblyVersion("01.25.06.18")]
+[assembly: AssemblyFileVersion("01.25.06.18")]
